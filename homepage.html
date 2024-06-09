@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Catalog</title>
+  <style>
+    /* Add some basic styling */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 20px;
+    }
+    .product-list {
+      background-color: white;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-right: 20px;
+      width: 300px;
+    }
+    .product-list h2 {
+      margin-top: 0;
+    }
+    .product-list ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    .product-list li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    .product-list img {
+      width: 60px;
+      height: 60px;
+      margin-right: 10px;
+    }
+    .product-details {
+      background-color: white;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: 400px;
+    }
+    .product-details img {
+      max-width: 100%;
+      height: auto;
+    }
+    .product-details h2 {
+      margin-top: 0;
+    }
+    .product-details button {
+      background-color: #f58a21;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="product-list">
+      <h2>Our Products</h2>
+      <ul>
+        <li>
+          <img src="dining-chair.jpg" alt="Dining Chair">
+          <div>
+            <h3>Dining Chair</h3>
+            <p>$280</p>
+          </div>
+        </li>
+        <li>
+          <img src="elegant-chair.jpg" alt="Elegant Chair">
+          <div>
+            <h3>Elegant Chair</h3>
+            <p>$280</p>
+          </div>
+        </li>
+        <li>
+          <img src="eames-chair.jpg" alt="Eames Chair">
+          <div>
+            <h3>Eames Chair</h3>
+            <p>$280</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="product-details">
+      <img src="eames-chair.jpg" alt="Eames Chair">
+      <h2>Eames Chair</h2>
+      <p>Upholster Stylish Restaurant Chair. Modern design and good-quality. Steel frame inside, molded foam sponge. High quality solid wood base.</p>
+      <p>$280</p>
+      <button>Add To My Cart</button>
+    </div>
+  </div>
+</body>
+</html>

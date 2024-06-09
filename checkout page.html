@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout</title>
+  <style>
+    /* Global Styles */
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f8f8f8;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Checkout Container */
+    .checkout-container {
+      max-width: 800px;
+      margin: 50px auto;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      padding: 40px;
+    }
+
+    /* Checkout Header */
+    .checkout-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+    .checkout-header h1 {
+      font-size: 32px;
+      font-weight: 600;
+      color: #333;
+    }
+    .checkout-header a {
+      color: #999;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    .checkout-header a:hover {
+      color: #666;
+    }
+
+    /* Checkout Form */
+    .checkout-form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 30px;
+    }
+    .checkout-form label {
+      display: block;
+      font-size: 14px;
+      font-weight: 500;
+      color: #666;
+      margin-bottom: 5px;
+    }
+    .checkout-form input,
+    .checkout-form select {
+      width: 100%;
+      padding: 12px 16px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 16px;
+      color: #333;
+    }
+    .checkout-form button {
+      grid-column: 1 / span 2;
+      background-color: #ff6b6b;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 14px 20px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .checkout-form button:hover {
+      background-color: #ff4d4d;
+    }
+  </style>
+</head>
+<body>
+  <div class="checkout-container">
+    <div class="checkout-header">
+      <h1>Checkout</h1>
+      <a href="#">Back to Cart</a>
+    </div>
+    <form class="checkout-form">
+      <div>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+      <div>
+        <label for="address">Address</label>
+        <input type="text" id="address" name="address" placeholder="Enter your address" required>
+      </div>
+      <div>
+        <label for="city">City</label>
+        <input type="text" id="city" name="city" placeholder="Enter your city" required>
+      </div>
+      <div>
+        <label for="state">State</label>
+        <select id="state" name="state" required>
+          <option value="">Select your state</option>
+          <!-- Add options for all states -->
+        </select>
+      </div>
+      <div>
+        <label for="zip">Zip Code</label>
+        <input type="text" id="zip" name="zip" placeholder="Enter your zip code" required>
+      </div>
+      <button type="submit">Place Order</button>
+    </form>
+  </div>
+</body>
+</html>

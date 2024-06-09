@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    /* Global Styles */
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Product Container */
+    .product-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      max-width: 1200px;
+      margin: 80px auto;
+    }
+
+    /* Product Image */
+    .product-image {
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+    .product-image img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .product-image .sale-tag {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background-color: #ff4d4d;
+      color: #fff;
+      padding: 6px 12px;
+      font-size: 14px;
+      border-radius: 4px;
+    }
+
+    /* Product Details */
+    .product-details {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .product-details h1 {
+      font-size: 36px;
+      font-weight: 700;
+      color: #333;
+      margin-bottom: 20px;
+    }
+    .product-details .price {
+      font-size: 24px;
+      font-weight: 600;
+      color: #ff4d4d;
+      margin-bottom: 20px;
+    }
+    .product-details .description {
+      font-size: 16px;
+      color: #666;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+    .product-details .actions {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .product-details .actions input {
+      width: 60px;
+      height: 40px;
+      text-align: center;
+      font-size: 16px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      margin-right: 10px;
+    }
+    .product-details .actions button {
+      background-color: #ff4d4d;
+      color: #fff;
+      border: none;
+      padding: 12px 24px;
+      font-size: 16px;
+      font-weight: 600;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .product-details .actions button:hover {
+      background-color: #e64545;
+    }
+  </style>
+</head>
+<body>
+  <div class="product-container">
+    <div class="product-image">
+      <img src="product-image.jpg" alt="Product Image">
+      <div class="sale-tag">Sale</div>
+    </div>
+    <div class="product-details">
+      <h1>lamborgini urus</h1>
+      <div class="price">$250,000.99</div>
+      <div class="description">
+        One the best in the market right now its very fast, durable,strong for any situation also movers of to 80km/hr 
+      </div>
+      <div class="actions">
+        <input type="number" value="1" min="1">
+        <button>Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
